@@ -28,3 +28,18 @@ Small microservice that gives one the name of timezone for a position specified 
   ```
 
 * Point you browser to http://localhost:5000
+
+
+# Running tests
+
+Make sure you have the virtual environment set up and the requirements installed (see "Development" above)
+
+* Change into project directory
+  ```
+  cd timezones
+  ```
+
+* Run tests
+  ```
+  pytest
+  ```
