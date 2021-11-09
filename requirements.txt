@@ -5,3 +5,6 @@ tzwhere==3.0.3
 ipdb==0.13.9
 black==21.10b0
 pre-commit==2.15.0
+
+# testing
+pytest==6.2.5
