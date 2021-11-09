@@ -17,6 +17,11 @@ Small microservice that gives one the name of timezone for a position specified 
   pip install -r requirements.txt
   ```
 
+* Install pre commit hooks
+  ```
+  pre-commit install
+  ``` 
+
 * Start development server
   ```bash
   FLASK_APP=timezones flask run

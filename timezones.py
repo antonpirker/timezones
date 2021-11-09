@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/", methods=['GET'])
+
+@app.route("/", methods=["GET"])
 def root():
-    return jsonify({ "hello": f"world" })
+    return jsonify({"hello": f"world"})
