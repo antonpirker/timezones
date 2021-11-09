@@ -14,9 +14,8 @@ def client():
         yield client
 
 
-def test_something(client):
-    """Test for something"""
+def test_root(client):
+    """Test API root"""
 
     response = client.get("/")
-    print(response)
-    assert b"xxx" in response.data
+    assert b'{"timezones":"http://localhost/timezones"}' in response.data
