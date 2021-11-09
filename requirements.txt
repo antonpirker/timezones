@@ -8,3 +8,6 @@ pre-commit==2.15.0
 
 # testing
 pytest==6.2.5
+
+# production deployment
+gunicorn==20.1.0
