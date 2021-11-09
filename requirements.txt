@@ -1,0 +1,6 @@
+Flask==2.0.2
+tzwhere==3.0.3
+
+# development
+ipdb==0.13.9
+black==21.10b0
