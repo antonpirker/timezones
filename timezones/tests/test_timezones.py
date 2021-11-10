@@ -35,9 +35,18 @@ def test_timezone(client):
     """If lat/lon is given, a timezone name is returned"""
     rv = client.get("/timezones?lat=48.19&lon=16.39")
     data = rv.get_json()
-
     assert "timezone" in data
     assert data["timezone"] == "Europe/Vienna"
+
+    rv = client.get("/timezones?lat=19.278222&lon=166.647148")
+    data = rv.get_json()
+    assert "timezone" in data
+    assert data["timezone"] == "Pacific/Wake"
+
+    rv = client.get("/timezones?lat=19.284021&lon=166.716906")
+    data = rv.get_json()
+    assert "timezone" in data
+    assert data["timezone"] == "UTC"
 
 
 def test_uninhabitated_timezone(client):
