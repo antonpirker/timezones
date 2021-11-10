@@ -58,3 +58,10 @@ docker run -p 8000:8000 timezones:v0.0.1
 ```
 
 Point you browser to: http://localhost:8000
+
+
+# Preview
+
+A running preview of the microservice can be found here: 
+
+https://main-antonpirker-timezones.wdpr.run/timezones?lat=48.19&lon=16.39
